@@ -3,7 +3,7 @@
 
 # Student Management - Best for beginners
 # Angular 13 Basic Demo CRUD Application
-**New to this project?** See [docs/newcomers.md](docs/newcomers.md) for a quick setup guide.
+**New to this project?** See [docs/newcomers.md](docs/newcomers.md) for a quick setup guide and naming suggestions.
 
 
 ## Created By [Sangwin Gawande](https://sangw.in)
