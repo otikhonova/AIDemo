@@ -69,6 +69,23 @@ The root `angular.json` contains build and test configuration. Compilation setti
 - `ng generate service <name>` – create a new service
 - `ng build` – build the project for production
 
+## Naming suggestions
+
+Keeping consistent naming conventions makes the code easier to understand. This
+project follows a few simple rules inspired by the Angular style guide:
+
+- **Components** – `kebab-case` file names ending in `.component.ts` with matching
+  `PascalCase` class names, e.g. `student-list.component.ts` contains
+  `StudentListComponent`.
+- **Services** – `kebab-case` files suffixed with `.service.ts` and a
+  `PascalCase` class such as `StudentService`.
+- **Interfaces and models** – `kebab-case` file names like
+  `student.model.ts` and `PascalCase` type names.
+- **Variables and methods** – use `camelCase`.
+
+Following these suggestions keeps the code base consistent and easier to
+navigate.
+
 ## Additional resources
 
 The original demo and tutorial are by [Sangwin Gawande](https://sangw.in). You can explore the live demo [here](https://blog.sangw.in/angular-student-management/).
