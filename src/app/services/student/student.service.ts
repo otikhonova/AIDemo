@@ -2,10 +2,10 @@
  * Created By : Sangwin Gawande (https://sangw.in)
  */
 
- import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 
- @Injectable()
- export class StudentService {
+@Injectable()
+export class StudentService {
 
    constructor() { }
 
