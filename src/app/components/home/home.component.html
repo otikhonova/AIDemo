@@ -5,8 +5,9 @@
 	<!-- Logo -->
 	<a href="https://sangw.in" target="_blank"><img src="assets/sangwin-logo.png" class="logo"></a>
 	<!-- Sidebar Links -->
-	<a class="w3-bar-item w3-button" [ngClass]="{'w3-teal': (active == '/')}" routerLink="/"> <i class="w3-medium fa fa-user"></i>  User List</a>
-	<a class="w3-bar-item w3-button" routerLink="/add"  [ngClass]="{'w3-teal': (active == '/add')}"> <i class="w3-medium fa fa-plus"></i>  Add new user</a>
+        <a class="w3-bar-item w3-button" [ngClass]="{'w3-teal': (active == '/')}" routerLink="/"> <i class="w3-medium fa fa-user"></i>  User List</a>
+        <a class="w3-bar-item w3-button" routerLink="/lecturers" [ngClass]="{'w3-teal': (active == '/lecturers')}"> <i class="w3-medium fa fa-user"></i>  Lecturer List</a>
+        <a class="w3-bar-item w3-button" routerLink="/add"  [ngClass]="{'w3-teal': (active == '/add')}"> <i class="w3-medium fa fa-plus"></i>  Add new user</a>
 	<a class="w3-bar-item w3-button" (click)="logOut()"><i class="w3-medium fa fa-sign-out"></i>  Logout</a>
 </nav>
 
