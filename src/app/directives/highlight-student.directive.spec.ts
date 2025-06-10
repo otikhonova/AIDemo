@@ -3,10 +3,12 @@
  */
 
 import { HighlightStudentDirective } from './highlight-student.directive';
+import { ElementRef } from '@angular/core';
 
 describe('HighlightStudentDirective', () => {
   it('should create an instance', () => {
-    const directive: any = new HighlightStudentDirective();
+    const el = new ElementRef(null);
+    const directive: any = new HighlightStudentDirective(el);
     expect(directive).toBeTruthy();
   });
 });
