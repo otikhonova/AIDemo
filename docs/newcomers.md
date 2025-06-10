@@ -4,7 +4,7 @@ Welcome to the **Angular Student Management** demo project. This short guide hel
 
 ## Overview
 
-This project demonstrates a simple CRUD (Create, Read, Update, Delete) application written in Angular 13. It uses local storage as a fake backend to manage lists of **students** and **lecturers**. You can log in as an administrator, add new entries, update or delete existing ones and view individual details.
+This project demonstrates a simple CRUD (Create, Read, Update, Delete) application written in Angular 20. It uses local storage as a fake backend to manage a list of students. You can log in as an administrator, add new students, update or delete existing ones and view individual details.
 
 ## Prerequisites
 

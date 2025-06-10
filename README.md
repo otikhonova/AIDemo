@@ -1,14 +1,13 @@
 ## [Click here for the demo](https://blog.sangw.in/angular-student-management/)
 
-
-# Student & Lecturer Management - Best for beginners
-# Angular 13 Basic Demo CRUD Application
+# Student Management
+# Angular 20 Basic Demo CRUD Application
 **New to this project?** See [docs/newcomers.md](docs/newcomers.md) for a quick setup guide and naming suggestions.
 
 
 ## Created By [Sangwin Gawande](https://sangw.in)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
 
 ## Feature list
 
@@ -50,7 +49,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Angular Student & Lecturer Management
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
 
 ## Development server
 
