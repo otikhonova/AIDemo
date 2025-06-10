@@ -10,6 +10,9 @@ import { ToastrService } from 'ngx-toastr';
 import { StudentListComponent } from '../student/list/student-list.component';
 import { StudentDetailsComponent } from '../student/details/student-details.component';
 import { StudentAddComponent } from '../student/add/student-add.component';
+import { LecturerListComponent } from '../lecturer/list/lecturer-list.component';
+import { LecturerDetailsComponent } from '../lecturer/details/lecturer-details.component';
+import { LecturerAddComponent } from '../lecturer/add/lecturer-add.component';
 
 // Services
 import { routerTransition } from '../../services/config/config.service';
@@ -52,10 +55,10 @@ export class HomeComponent implements OnInit {
 
 // Define and export child routes of HomeComponent
 export const homeChildRoutes: Routes = [
-	{
-		path: '',
-		component: StudentListComponent
-	},
+        {
+                path: '',
+                component: StudentListComponent
+        },
 	{
 		path: 'add',
 		component: StudentAddComponent
@@ -64,10 +67,26 @@ export const homeChildRoutes: Routes = [
 		path: 'update/:id',
 		component: StudentAddComponent
 	},
-	{
-		path: 'detail/:id',
-		component: StudentDetailsComponent
-	}
+        {
+                path: 'detail/:id',
+                component: StudentDetailsComponent
+        },
+        {
+                path: 'lecturers',
+                component: LecturerListComponent
+        },
+        {
+                path: 'lecturers/add',
+                component: LecturerAddComponent
+        },
+        {
+                path: 'lecturers/update/:id',
+                component: LecturerAddComponent
+        },
+        {
+                path: 'lecturers/detail/:id',
+                component: LecturerDetailsComponent
+        }
 ];
 
 /**
