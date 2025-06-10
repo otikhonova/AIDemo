@@ -1,7 +1,6 @@
 ## [Click here for the demo](https://blog.sangw.in/angular-student-management/)
 
-
-# Student Management - Best for beginners
+# Student Management
 # Angular 20 Basic Demo CRUD Application
 **New to this project?** See [docs/newcomers.md](docs/newcomers.md) for a quick setup guide and naming suggestions.
 
@@ -19,6 +18,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  * Student Addition
  * Student Update
  * Student Deletion
+ * Lecturer Listing
+ * Lecturer Searching
+ * Lecturer Details
+ * Lecturer Addition
+ * Lecturer Update
+ * Lecturer Deletion
 
 
 ## Angular features used
@@ -42,7 +47,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  * Toaster for success/error messages
 
 
-# Angular Student Management
+# Angular Student & Lecturer Management
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
 

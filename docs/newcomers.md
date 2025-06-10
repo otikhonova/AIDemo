@@ -53,8 +53,8 @@ npm test
 Most of the application code lives under the `src/` folder:
 
 - `app/` – Angular modules, components and services
-  - `components/` – feature components such as login and student management
-  - `services/` – plain services for authentication, configuration and student data
+  - `components/` – feature components such as login, student management and lecturer management
+  - `services/` – plain services for authentication, configuration, student data and lecturer data
   - `pipes/` – custom Angular pipes used for filtering and formatting
   - `directives/` – example of an attribute directive
 - `assets/` – static assets like images
@@ -76,9 +76,10 @@ project follows a few simple rules inspired by the Angular style guide:
 
 - **Components** – `kebab-case` file names ending in `.component.ts` with matching
   `PascalCase` class names, e.g. `student-list.component.ts` contains
-  `StudentListComponent`.
+  `StudentListComponent` or `lecturer-list.component.ts` contains
+  `LecturerListComponent`.
 - **Services** – `kebab-case` files suffixed with `.service.ts` and a
-  `PascalCase` class such as `StudentService`.
+  `PascalCase` class such as `StudentService` or `LecturerService`.
 - **Interfaces and models** – `kebab-case` file names like
   `student.model.ts` and `PascalCase` type names.
 - **Variables and methods** – use `camelCase`.
