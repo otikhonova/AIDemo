@@ -13,6 +13,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { AuthService } from './services/auth/auth.service';
 import { UserService } from './services/user/user.service';
 import { StudentService } from './services/student/student.service';
+import { LecturerService } from './services/lecturer/lecturer.service';
 
 // Pipes
 import { FilterPipe } from './pipes/filter.pipe';
@@ -23,6 +24,9 @@ import { AppComponent } from './components/index/app.component';
 import { StudentListComponent } from './components/student/list/student-list.component';
 import { StudentDetailsComponent } from './components/student/details/student-details.component';
 import { StudentAddComponent } from './components/student/add/student-add.component';
+import { LecturerListComponent } from './components/lecturer/list/lecturer-list.component';
+import { LecturerDetailsComponent } from './components/lecturer/details/lecturer-details.component';
+import { LecturerAddComponent } from './components/lecturer/add/lecturer-add.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent, homeChildRoutes } from './components/home/home.component';
 import { HighlightStudentDirective } from './directives/highlight-student.directive';
@@ -48,13 +52,16 @@ const routes: Routes = [
 ];
 
 @NgModule({
-	declarations: [
-		AppComponent,
-		StudentListComponent,
-		StudentDetailsComponent,
-		StudentAddComponent,
-		LoginComponent,
-		HomeComponent,
+        declarations: [
+                AppComponent,
+                StudentListComponent,
+                StudentDetailsComponent,
+                StudentAddComponent,
+                LecturerListComponent,
+                LecturerDetailsComponent,
+                LecturerAddComponent,
+                LoginComponent,
+                HomeComponent,
 		FilterPipe,
 		PhonePipe,
 		HighlightStudentDirective
@@ -72,7 +79,7 @@ const routes: Routes = [
 			preventDuplicates: true,
 		}),
 	],
-	providers: [AuthService, UserService, StudentService],
+        providers: [AuthService, UserService, StudentService, LecturerService],
 	bootstrap: [AppComponent]
 })
 

@@ -14,8 +14,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
 	title = 'Student Management By Sangwin Gawande';
 
-	// Add few students for initial listing
-	studentsList = [
+        // Add few students for initial listing
+        studentsList = [
 	{	
 		id : 1,
 		first_name : "Sangwin",
@@ -56,12 +56,33 @@ export class AppComponent {
 		phone : 8595856547,
 		department : "Engineering"
 	}
-	];
+        ];
+
+        // Add few lecturers for initial listing
+        lecturersList = [
+        {
+                id : 1,
+                first_name : "Prof. Xavier",
+                last_name : "Smith",
+                email : "xavier@yopmail.com",
+                phone : 9876543210,
+                department : "Science"
+        },
+        {
+                id : 2,
+                first_name : "Dr. Jane",
+                last_name : "Doe",
+                email : "jane@yopmail.com",
+                phone : 9123456780,
+                department : "Arts"
+        }
+        ];
 
 	constructor() {
-		// Save students to localStorage
-		localStorage.setItem('students', JSON.stringify(this.studentsList));
-	}
+                // Save students and lecturers to localStorage
+                localStorage.setItem('students', JSON.stringify(this.studentsList));
+                localStorage.setItem('lecturers', JSON.stringify(this.lecturersList));
+        }
 }
 
 /**
