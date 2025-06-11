@@ -16,20 +16,20 @@ export class StudentService {
        studentList = {
          code : 200,
          message : "Students List Fetched Successfully",
-         data : JSON.parse(localStorage.getItem('students') || '')
+         data : JSON.parse(localStorage.getItem('students') || '[]')
        }
      }else{
        studentList = {
          code : 200,
          message : "Students List Fetched Successfully",
-         data : JSON.parse(localStorage.getItem('students') || '')
+         data : JSON.parse(localStorage.getItem('students') || '[]')
        }
      }
      return studentList;
    }
 
    doRegisterStudent(data: any, index: number){
-     let studentList = JSON.parse(localStorage.getItem('students') || '');
+     let studentList = JSON.parse(localStorage.getItem('students') || '[]');
      let returnData;
      if(index != null) {
        for (var i = 0; i < studentList.length; i++) {
@@ -48,7 +48,7 @@ export class StudentService {
        returnData = {
          code : 200,
          message : "Student Successfully Updated",
-         data : JSON.parse(localStorage.getItem('students') || '')
+         data : JSON.parse(localStorage.getItem('students') || '[]')
        }    
      }else{      
        data.id = this.generateRandomID();
@@ -69,14 +69,14 @@ export class StudentService {
        returnData = {
          code : 200,
          message : "Student Successfully Added",
-         data : JSON.parse(localStorage.getItem('students') || '')
+         data : JSON.parse(localStorage.getItem('students') || '[]')
        }    
      }
      return returnData;
    }
 
    deleteStudent(index:number){
-     let studentList = JSON.parse(localStorage.getItem('students') || '');
+     let studentList = JSON.parse(localStorage.getItem('students') || '[]');
 
      studentList.splice(index, 1);
 
@@ -85,7 +85,7 @@ export class StudentService {
      let returnData = {
        code : 200,
        message : "Student Successfully Deleted",
-       data : JSON.parse(localStorage.getItem('students') || '')
+       data : JSON.parse(localStorage.getItem('students') || '[]')
      }
 
      return returnData;
@@ -94,7 +94,7 @@ export class StudentService {
 
 
    getStudentDetails(index:number){
-     let studentList = JSON.parse(localStorage.getItem('students') || '');
+     let studentList = JSON.parse(localStorage.getItem('students') || '[]');
 
      let returnData = {
        code : 200,

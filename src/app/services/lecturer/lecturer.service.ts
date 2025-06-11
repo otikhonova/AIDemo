@@ -16,20 +16,20 @@ export class LecturerService {
       lecturerList = {
         code : 200,
         message : "Lecturers List Fetched Successfully",
-        data : JSON.parse(localStorage.getItem('lecturers') || '')
+        data : JSON.parse(localStorage.getItem('lecturers') || '[]')
       }
     }else{
       lecturerList = {
         code : 200,
         message : "Lecturers List Fetched Successfully",
-        data : JSON.parse(localStorage.getItem('lecturers') || '')
+        data : JSON.parse(localStorage.getItem('lecturers') || '[]')
       }
     }
     return lecturerList;
   }
 
   doRegisterLecturer(data: any, index: number){
-    let lecturerList = JSON.parse(localStorage.getItem('lecturers') || '');
+    let lecturerList = JSON.parse(localStorage.getItem('lecturers') || '[]');
     let returnData;
     if(index != null) {
       for (var i = 0; i < lecturerList.length; i++) {
@@ -48,7 +48,7 @@ export class LecturerService {
       returnData = {
         code : 200,
         message : "Lecturer Successfully Updated",
-        data : JSON.parse(localStorage.getItem('lecturers') || '')
+        data : JSON.parse(localStorage.getItem('lecturers') || '[]')
       }
     }else{
       data.id = this.generateRandomID();
@@ -69,14 +69,14 @@ export class LecturerService {
       returnData = {
         code : 200,
         message : "Lecturer Successfully Added",
-        data : JSON.parse(localStorage.getItem('lecturers') || '')
+        data : JSON.parse(localStorage.getItem('lecturers') || '[]')
       }
     }
     return returnData;
   }
 
   deleteLecturer(index:number){
-    let lecturerList = JSON.parse(localStorage.getItem('lecturers') || '');
+    let lecturerList = JSON.parse(localStorage.getItem('lecturers') || '[]');
 
     lecturerList.splice(index, 1);
 
@@ -85,7 +85,7 @@ export class LecturerService {
     let returnData = {
       code : 200,
       message : "Lecturer Successfully Deleted",
-      data : JSON.parse(localStorage.getItem('lecturers') || '')
+      data : JSON.parse(localStorage.getItem('lecturers') || '[]')
     }
 
     return returnData;
@@ -94,7 +94,7 @@ export class LecturerService {
 
 
   getLecturerDetails(index:number){
-    let lecturerList = JSON.parse(localStorage.getItem('lecturers') || '');
+    let lecturerList = JSON.parse(localStorage.getItem('lecturers') || '[]');
 
     let returnData = {
       code : 200,
