@@ -1,7 +1,7 @@
 /**
  * Created By : Sangwin Gawande (https://sangw.in)
  */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { LecturerDetailsComponent } from './lecturer-details.component';
 
@@ -9,7 +9,7 @@ describe('LecturerDetailsComponent', () => {
   let component: LecturerDetailsComponent;
   let fixture: ComponentFixture<LecturerDetailsComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ LecturerDetailsComponent ]
     })
