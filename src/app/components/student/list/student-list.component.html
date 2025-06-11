@@ -10,7 +10,7 @@
 		<h3>Oh no</h3>
 		<p>No students found <span *ngIf="filterData"> with search "{{filterData}}"</span> </p>
 	</div>
-	<div class="w3-panel w3-light-grey w3-padding-16 w3-card-2" *ngIf="(studentListData | filter:filterData | filter:filterData).length != 0">
+	<div class="w3-panel w3-light-grey w3-padding-16 w3-card-2" *ngIf="(studentListData | filter:filterData).length != 0">
 		<table class="w3-table w3-striped w3-bordered">
 			<tr>
 				<th><i class="w3-medium custom-icon fa fa-refresh"></i> Sr. No.</th>

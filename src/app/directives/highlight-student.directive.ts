@@ -2,10 +2,11 @@
  * Created By : Sangwin Gawande (https://sangw.in)
  */
 
-import { Directive, ElementRef,HostListener } from '@angular/core';
+import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appHighlightStudent]'
+  selector: '[appHighlightStudent]',
+  standalone: true
 })
 export class HighlightStudentDirective {
 

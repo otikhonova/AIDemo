@@ -4,6 +4,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { RouterModule, Routes, Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { ToastrService } from 'ngx-toastr';
 
 // Components
@@ -19,7 +20,8 @@ import { routerTransition } from '../../../services/config/config.service';
         templateUrl: './lecturer-home.component.html',
         styleUrls: ['./lecturer-home.component.css'],
         animations: [routerTransition()],
-        host: { '[@routerTransition]': '' }
+        host: { '[@routerTransition]': '' },
+        imports: [RouterModule, CommonModule]
 })
 
 export class LecturerHomeComponent implements OnInit {

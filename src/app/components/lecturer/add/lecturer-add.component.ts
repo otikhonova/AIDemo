@@ -2,8 +2,9 @@
  * Created By : Sangwin Gawande (https://sangw.in)
  */
 import { Component, OnInit } from '@angular/core';
-import { Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { Validators, FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes, Router, ActivatedRoute } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 // Services
 import { ValidationService } from '../../../services/config/config.service';
@@ -17,7 +18,9 @@ import { ToastrService } from 'ngx-toastr';
         templateUrl: './lecturer-add.component.html',
         styleUrls: ['./lecturer-add.component.css'],
         animations: [routerTransition()],
-        host: { '[@routerTransition]': '' }
+        host: { '[@routerTransition]': '' },
+        standalone: true,
+        imports: [CommonModule, ReactiveFormsModule, RouterModule]
 })
 
 export class LecturerAddComponent implements OnInit {

@@ -6,7 +6,7 @@
         </div>
         <span><i class="w3-medium fa fa-search"></i> Search : <input class="" type="text" [(ngModel)]='filterData'></span>
 
-        <div class="w3-panel w3-green" *ngIf="(lecturerListData | filter:filterData).length == 0">
+        <div class="w3-panel w3-green" *ngIf="lecturerListData && (lecturerListData | filter:filterData).length == 0">
                 <h3>Oh no</h3>
                 <p>No lecturers found <span *ngIf="filterData"> with search "{{filterData}}"</span> </p>
         </div>

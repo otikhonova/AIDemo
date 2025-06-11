@@ -4,17 +4,36 @@
 
 import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 // Services
 import { StudentService } from '../../../services/student/student.service';
 import { routerTransition } from '../../../services/config/config.service';
+
+// Pipes
+import { FilterPipe } from '../../../pipes/filter.pipe';
+import { PhonePipe } from '../../../pipes/phone.pipe';
+
+// Directives
+import { HighlightStudentDirective } from '../../../directives/highlight-student.directive';
 
 @Component({
 	selector: 'app-student-list',
 	templateUrl: './student-list.component.html',
 	styleUrls: ['./student-list.component.css'],
 	animations: [routerTransition()],
-	host: { '[@routerTransition]': '' }
+	host: { '[@routerTransition]': '' },
+	standalone: true,
+	imports: [
+		CommonModule,
+		FormsModule,
+		RouterModule,
+		FilterPipe,
+		PhonePipe,
+		HighlightStudentDirective
+	]
 })
 
 export class StudentListComponent implements OnInit {

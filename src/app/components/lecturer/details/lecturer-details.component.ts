@@ -5,6 +5,7 @@
  import {Validators, FormBuilder, FormGroup} from '@angular/forms';
  import { RouterModule, Routes ,Router,ActivatedRoute} from '@angular/router';
  import { ToastrService } from 'ngx-toastr';
+ import { CommonModule } from '@angular/common';
 
  // Services
  import { LecturerService } from '../../../services/lecturer/lecturer.service';
@@ -15,7 +16,9 @@
         templateUrl: './lecturer-details.component.html',
         styleUrls: ['./lecturer-details.component.css'],
         animations: [routerTransition()],
-        host: {'[@routerTransition]': ''}
+        host: {'[@routerTransition]': ''},
+        standalone: true,
+        imports: [CommonModule, RouterModule]
  })
 
  export class LecturerDetailsComponent implements OnInit {

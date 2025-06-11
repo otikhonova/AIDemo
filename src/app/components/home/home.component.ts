@@ -4,6 +4,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { RouterModule, Routes, Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { ToastrService } from 'ngx-toastr';
 
 // Components
@@ -19,7 +20,9 @@ import { routerTransition } from '../../services/config/config.service';
 	templateUrl: './home.component.html',
 	styleUrls: ['./home.component.css'],
 	animations: [routerTransition()],
-	host: { '[@routerTransition]': '' }
+	host: { '[@routerTransition]': '' },
+	standalone: true,
+	imports: [RouterModule, CommonModule]
 })
 
 

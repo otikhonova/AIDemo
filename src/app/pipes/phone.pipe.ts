@@ -5,7 +5,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'phone'
+  name: 'phone',
+  standalone: true
 })
 export class PhonePipe implements PipeTransform {
 

@@ -35,7 +35,7 @@ import { HighlightStudentDirective } from './directives/highlight-student.direct
 
 
 // Parent Routes
-const routes: Routes = [
+export const routes: Routes = [
         {
                 path: '',
                 component: HomeComponent,
@@ -59,20 +59,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-        declarations: [
-                AppComponent,
-                StudentListComponent,
-                StudentDetailsComponent,
-                StudentAddComponent,
-                LecturerListComponent,
-                LecturerDetailsComponent,
-                LecturerAddComponent,
-                LecturerHomeComponent,
-                LoginComponent,
-                HomeComponent,
-                FilterPipe,
-                PhonePipe,
-                HighlightStudentDirective
+	declarations: [
+		// All components are standalone and should be imported instead
 	],
 	imports: [
 		BrowserModule,
@@ -81,14 +69,22 @@ const routes: Routes = [
 		FormsModule,
 		ReactiveFormsModule,
 		BrowserAnimationsModule,
+		// Import all standalone components
+		AppComponent,
+		StudentDetailsComponent,
+		StudentAddComponent,
+		LecturerDetailsComponent,
+		LecturerAddComponent,
+		LecturerHomeComponent,
+		LoginComponent,
+		HomeComponent,
 		ToastrModule.forRoot({
 			timeOut: 3000,
 			positionClass: 'toast-bottom-right',
 			preventDuplicates: true,
-		}),
+		})
 	],
-        providers: [AuthService, UserService, StudentService, LecturerService],
-        bootstrap: [AppComponent]
+        providers: [AuthService, UserService, StudentService, LecturerService]
 })
 
 // enableProdMode();
