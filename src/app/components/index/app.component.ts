@@ -12,10 +12,10 @@ import { Component } from '@angular/core';
 
 
 export class AppComponent {
-	title = 'Student Management By Sangwin Gawande';
+        title = 'Student Management By Sangwin Gawande';
 
-	// Add few students for initial listing
-	studentsList = [
+        // Add few students for initial listing
+        studentsList = [
 	{	
 		id : 1,
 		first_name : "Sangwin",
@@ -55,13 +55,40 @@ export class AppComponent {
 		email : "peter@yopmail.com",
 		phone : 8595856547,
 		department : "Engineering"
-	}
-	];
+        } 
+        ];
 
-	constructor() {
-		// Save students to localStorage
-		localStorage.setItem('students', JSON.stringify(this.studentsList));
-	}
+        // Add few lecturers for initial listing
+        lecturersList = [
+        {
+                id : 1,
+                first_name : "Albert",
+                last_name : "Hodges",
+                email : "albert@yopmail.com",
+                phone : 9011223344
+        },
+        {
+                id : 2,
+                first_name : "Julia",
+                last_name : "Reeves",
+                email : "julia@yopmail.com",
+                phone : 9800112233
+        },
+        {
+                id : 3,
+                first_name : "Cindy",
+                last_name : "Adams",
+                email : "cindy@yopmail.com",
+                phone : 9456677889
+        }
+        ];
+
+        constructor() {
+                // Save students to localStorage
+                localStorage.setItem('students', JSON.stringify(this.studentsList));
+                // Save lecturers to localStorage
+                localStorage.setItem('lecturers', JSON.stringify(this.lecturersList));
+        }
 }
 
 /**
