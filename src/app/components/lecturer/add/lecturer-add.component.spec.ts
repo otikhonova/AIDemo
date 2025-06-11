@@ -2,7 +2,7 @@
  * Created By : Sangwin Gawande (https://sangw.in)
  */
 
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { LecturerAddComponent } from './lecturer-add.component';
 
@@ -10,7 +10,7 @@ describe('LecturerAddComponent', () => {
   let component: LecturerAddComponent;
   let fixture: ComponentFixture<LecturerAddComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ LecturerAddComponent ]
     })
